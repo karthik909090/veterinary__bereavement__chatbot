@@ -1,0 +1,33 @@
+{
+  "name": "hume-evi-typescript-sample-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+"scripts": {
+  "dev": "vite",
+  "build": "tsc && vite build",
+  "preview": "vite preview",
+  "start": "vite"  
+}
+,
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "hume": "^0.8.3",
+    "lottie-web": "^5.12.2"
+  },
+  "devDependencies": {
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.4",
+    "vite": "^5.1.4",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

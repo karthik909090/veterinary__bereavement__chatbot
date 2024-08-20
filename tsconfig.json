@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    /* Target ECMAScript version */
+    "target": "ES2020",
+
+    /* Use the define property for class fields */
+    "useDefineForClassFields": true,
+
+    /* Specify the module code generation */
+    "module": "ESNext",
+
+    /* Include standard libraries */
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+
+    /* Skip type checking of declaration files */
+    "skipLibCheck": true,
+
+    /* Enable bundler mode for module resolution */
+    "moduleResolution": "bundler",
+
+    /* Allow importing TypeScript files with extensions */
+    "allowImportingTsExtensions": true,
+
+    /* Allow importing JSON modules */
+    "resolveJsonModule": true,
+
+    /* Treat each file as a separate module */
+    "isolatedModules": true,
+
+    /* Do not emit any output */
+    "noEmit": true,
+
+    /* Enable strict type-checking options */
+    "strict": true,
+
+    /* Report errors on unused locals */
+    "noUnusedLocals": true,
+
+    /* Report errors on unused parameters */
+    "noUnusedParameters": true,
+
+    /* Report errors for fallthrough cases in switch statements */
+    "noFallthroughCasesInSwitch": true
+  },
+  
+  /* Specify the root files and folders to be included in the compilation */
+  "include": ["src"]
+}

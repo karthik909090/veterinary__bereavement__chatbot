@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veterinary Bereavement Chatbot</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lottie Player Script -->
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+</head>
+
+<body class="bg-gradient">
+    <div id="app" class="container d-flex flex-column align-items-center justify-content-center min-vh-100">
+        <!-- Welcome Message Section -->
+        <div class="welcome-section-container mb-5">
+            <div class="text-center">
+                <h1 class="display-4 welcome-title">Welcome</h1>
+                <p class="lead welcome-text">
+                    We understand how difficult the loss of a beloved pet can be. Our Veterinary Bereavement Chatbot is here to provide a compassionate and supportive space to help you navigate through this difficult time.
+                </p>
+                <p class="welcome-text">
+                    This chatbot offers a safe space for you to share your thoughts, express your emotions, and seek comfort. Whether you need advice or just someone to listen, we're here for you every step of the way.
+                </p>
+                <div class="alert alert-info welcome-note">
+                    <strong>Privacy Note:</strong> We do not store any personal information like email addresses. However, for continuous improvement of our services, we record anonymized conversations.
+                </div>
+            </div>
+        </div>
+
+        <!-- Loader -->
+        <div id="loader" class="d-none">
+            <div class="spinner-border text-primary" role="status">
+                <span class="sr-only">Connecting...</span>
+            </div>
+        </div>
+
+        <!-- Chatbot Interface -->
+        <div class="card shadow-lg w-100 glass-card" style="max-width: 900px;">
+            <div class="card-header text-center">
+                <h1 class="display-4 mb-0">Veterinary Bereavement Chatbot</h1>
+                <p class="lead">Compassionate Support for Pet Loss. Here to Heal You!</p>
+            </div>
+            <div id="chat" class="card-body overflow-auto d-none" style="height: 500px;">
+                <!-- Chat messages will be appended here -->
+            </div>
+            <div class="card-footer text-center">
+                <p>Click the "Show Chat" button to view your chat history.</p>
+                <div id="btn-container" class="d-flex flex-column align-items-center mt-3">
+                    
+                    <!-- Lottie Animation above start button -->
+                    <div class="lottie-container d-none" id="lottie-animation">
+                        <dotlottie-player 
+                            src="https://lottie.host/8b2c0dee-e6b5-4575-96b6-e87fe29a161b/9t32MNZyXP.json" 
+                            background="transparent" 
+                            speed="1" 
+                            style="width: 80px; height: 80px" 
+                            direction="1" 
+                            playMode="bounce" 
+                            loop 
+                            autoplay>
+                        </dotlottie-player>
+                    </div>
+
+                    <button id="start-btn" class="btn btn-gradient btn-lg mb-2" aria-label="Start Chat">
+                        <i class="bi bi-play-fill"></i> Start
+                    </button>
+                    <button id="stop-btn" class="btn btn-secondary btn-lg mb-2" aria-label="Stop Chat" disabled>
+                        <i class="bi bi-stop-fill"></i> Stop
+                    </button>
+                    <button id="show-chat-btn" class="btn btn-primary btn-lg mb-2" aria-label="Show Chat">
+                        <i class="bi bi-chat-dots"></i> Show Chat
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-4 text-muted text-center">
+            <p>&copy; 2024 Veterinary Bereavement Chatbot. All rights reserved.</p>
+        </footer>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
